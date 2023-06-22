@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="432.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateHouseController">
+   <center>
+
+ 
+
+      <AnchorPane prefHeight="200.0" prefWidth="308.0" BorderPane.alignment="CENTER">
+
+ 
+
+         <children>
+
+ 
+
+            <GridPane prefHeight="296.0" prefWidth="479.3333333333333" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+ 
+
+               <columnConstraints>
+
+ 
+
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.33331298828125" minWidth="10.0" prefWidth="186.0" />
+
+ 
+
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="294.0" />
+
+ 
+
+               </columnConstraints>
+
+ 
+
+               <rowConstraints>
+
+ 
+
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+
+ 
+
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+
+ 
+
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+
+ 
+
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+
+ 
+
+                  <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="59.33329772949219" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="37.33335876464844" minHeight="0.0" prefHeight="24.666702270507812" vgrow="SOMETIMES" />
+
+ 
+
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+
+ 
+
+               </rowConstraints>
+
+ 
+
+               <children>
+
+ 
+
+                  <Label text="House No.">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+                     </GridPane.margin></Label>
+
+ 
+
+                  <Label layoutX="10.0" layoutY="17.0" text="Address" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+                     </GridPane.margin></Label>
+
+ 
+
+                  <Label layoutX="10.0" layoutY="47.0" text="Availability" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+                     </GridPane.margin></Label>
+
+ 
+
+                  <Label layoutX="10.0" layoutY="47.0" text="Type ID" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+                     </GridPane.margin></Label>
+
+ 
+
+                  <Label layoutX="10.0" layoutY="107.0" text="Description" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+                     </GridPane.margin></Label>
+
+ 
+
+                  <Button fx:id="updateButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleUpdateButton" prefHeight="25.0" prefWidth="87.0" text="update" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin></Button>
+
+ 
+
+                  <Button fx:id="cancelButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleCancelButton" prefHeight="25.0" prefWidth="95.0" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="120.0" />
+                     </GridPane.margin></Button>
+                  <Label text="Price" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+                     </GridPane.margin></Label>
+                  <TextField fx:id="houseNoTextField" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="addressTextField" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin></TextField>
+                  <TextArea fx:id="descriptionTextArea" prefHeight="67.0" prefWidth="240.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin></TextArea>
+                  <TextField fx:id="typeIDTextField" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="priceTextField" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin></TextField>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <RadioButton fx:id="radioYes" mnemonicParsing="false" selected="true" text="Yes">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="availability" />
+                           </toggleGroup>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="radioNo" mnemonicParsing="false" text="No" toggleGroup="$availability">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin></RadioButton>
+                     </children>
+                  </HBox>
+
+ 
+
+               </children>
+
+ 
+
+            </GridPane>
+
+ 
+
+         </children>
+
+ 
+
+      </AnchorPane>
+   </center>
+   <top>
+      <Label alignment="CENTER" contentDisplay="CENTER" text="Update House" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </top>
+
+ 
+
+</BorderPane>
